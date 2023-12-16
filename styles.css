@@ -21,7 +21,7 @@
   padding-right: 30px;
 }
 
-.nav{
+.navbar-nav{
   padding-right:45px ;
 }
 
@@ -47,3 +47,15 @@ color: #1b234f !important;
   color:#fff;
   background-color: #1b234f;
 }
+
+/* media query for navbar (<large screen) */
+
+
+/* @media screen and (max-width: 992px){
+  .navbar-collapse{
+    padding-right: 0px;
+  }
+  .nav{
+    padding-right:0px ;
+  }
+} */
