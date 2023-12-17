@@ -48,6 +48,28 @@ color: #1b234f !important;
   background-color: #1b234f;
 }
 
+.intro-container {
+  display: flex;
+  padding: 2rem;
+  /* justify-content: center;
+   */
+   /* align-items: center; */
+}
+.intro-text {
+  padding:1.7rem;
+}
+.my-name {
+  font-size: 3rem;
+  letter-spacing:2px;
+  line-height:1.9;
+  font-weight: 600;
+}
+.display-picture-container {
+ padding: 4rem;
+}
+.display-picture {
+  width: 20rem;
+}
 /* media query for navbar (<large screen) */
 
 
@@ -59,3 +81,12 @@ color: #1b234f !important;
     padding-right:0px ;
   }
 } */
+
+
+@media screen and (max-width:992px){
+  .my-name{
+    letter-spacing: 1px;
+    line-height: 1;
+
+  }
+} 
