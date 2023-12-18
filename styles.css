@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .navbar {
-  padding: 10px 20px;
+  padding: 10px 45px;
   background-color: #fff;
   border-bottom: 0.1px solid rgb(197, 197, 197) ;
   backdrop-filter: blur(10px);
@@ -48,27 +48,43 @@ color: #1b234f !important;
   background-color: #1b234f;
 }
 
+.home-section{
+  padding: 4rem;
+  margin: 2rem 0;
+}
+
 .intro-container {
   display: flex;
-  padding: 2rem;
-  /* justify-content: center;
-   */
-   /* align-items: center; */
+padding-top: 2rem; 
 }
 .intro-text {
   padding:1.7rem;
 }
+
+.sub-text h5{
+  font-size: 2rem;
+}
+
+.sub-title{
+  font-size: 2rem;
+  line-height: 1.5;
+}
 .my-name {
-  font-size: 3rem;
+  font-size: 4.5rem;
   letter-spacing:2px;
-  line-height:1.9;
-  font-weight: 600;
+  line-height:1.5;
+  font-weight: 700;
+}
+
+.description {
+  line-height: 1.5;
 }
 .display-picture-container {
- padding: 4rem;
+  display: flex;
+  justify-content: center;
 }
 .display-picture {
-  width: 20rem;
+  width: 24rem;
 }
 /* media query for navbar (<large screen) */
 
@@ -82,11 +98,15 @@ color: #1b234f !important;
   }
 } */
 
-
+/* 
 @media screen and (max-width:992px){
+  .display-picture{
+    order: 1;
+  }
   .my-name{
+    
     letter-spacing: 1px;
     line-height: 1;
 
   }
-} 
+}  */
