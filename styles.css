@@ -141,3 +141,65 @@ padding-top: 2rem;
   }
 
 }
+
+.about-me-heading{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+.about-image-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:2rem;
+}
+
+.about-image{
+  width: 24rem;
+}
+
+.about-body{
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.about-me {
+  line-height: 1.5;
+}
+.name {
+  font-size: 3rem;
+  font-weight: 400;
+  /* line-height: 1.3; */
+}
+.sub-text{
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.about-description{
+  font-size:1.25rem;
+  padding-bottom: 2rem;
+
+}
+
+.about-body .media {
+  padding: 2px 0;
+}
+.media{
+display:flex;
+align-items: flex-start;
+}
+
+.about-body .media label{
+  padding:5px;
+  font-size:20px;
+  font-weight: 600;
+  flex:0 0 107px;  /* flex-grow flex-shrink flex-basis  */
+  border-right: 1px solid #c1c1c1;
+}
+
+.about-body .media p{
+  padding: 6px;
+  font-size:20px;
+  padding-left: 5px;
+}
