@@ -98,15 +98,46 @@ padding-top: 2rem;
   }
 } */
 
-/* 
+ /* when screen size is 992px or smaller */
 @media screen and (max-width:992px){
-  .display-picture{
-    order: 1;
+  .intro-text{
+    order:2;
   }
-  .my-name{
-    
-    letter-spacing: 1px;
-    line-height: 1;
+  .display-picture-container{
+    order:1;
+  }
+  
+} 
+/* when screen size is between 576px and 992px  */
+@media screen and  (max-width:768px) and (min-width:576px)   {
 
+  .my-name{
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    line-height: 1.9;
+  } 
+  .sub-title{
+    font-size: 1.2rem;
   }
-}  */
+}
+
+@media screen and  (max-width:576px){
+  .intro-text{
+    padding:0;
+    margin: 0;
+  }
+  .my-name {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  .sub-title{
+    font-size: 1rem;
+  }
+  .display-picture {
+    width: 20rem;
+  }
+
+}
