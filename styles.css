@@ -188,6 +188,7 @@ padding-top: 2rem;
 .media{
 display:flex;
 align-items: flex-start;
+/* flex-wrap: wrap; */
 }
 
 .about-body .media label{
@@ -202,4 +203,14 @@ align-items: flex-start;
   padding: 6px;
   font-size:20px;
   padding-left: 5px;
+}
+
+@media screen and  (max-width:576px){
+  
+  .about-image{
+   width: 20rem;
+  }
+  .about-body .media{
+    padding: 1px 0;
+  }
 }
