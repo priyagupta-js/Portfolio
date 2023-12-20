@@ -20,7 +20,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
       <div class="container-fluid">
         <!-- LOGO -->
         <a class="navbar-brand" href="/">PRIYA</a>
@@ -39,19 +39,19 @@
           <!-- NAVBAR - MENU  -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SKILLS</a>
+              <a class="nav-link" href="#skills">SKILLS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SERVICES</a>
+              <a class="nav-link" href="#services">SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PROJECTS</a>
+              <a class="nav-link" href="#projects">PROJECTS</a>
             </li>
           </ul>
-          <button class="btn btn-outline-success" type="submit">CONTACT</button>
+          <a href="#contact"><button class="btn btn-outline-success" type="submit">CONTACT</button></a>
         </div>
       </div>
     </nav>
@@ -99,11 +99,11 @@
     <!-- Home section div ends -->
 
     <!-- About section starts -->
-    <div class="container about-section">
+    <div class="container about-section" id="about">
       <div class="about-me-heading">
         <h1>ABOUT ME</h1>
       </div>
-      <div class="row">
+      <div class="row about-body">
         <div class="col-lg-6">
           <div class="about-image-container">
             <img
@@ -119,8 +119,8 @@
               <h2 class="name h2">Priya Gupta</h2>
               <h5 class="sub-text h5">
                 Freelancer in
-                <span style="color: #2f3c7e">Web Development </span>and
-                <span style="color: #2f3c7e">Graphic Design</span>
+                <span style="color: #2f3c7e">Web Development </span>
+                <!-- and<span style="color: #2f3c7e">Graphic Design</span> -->
               </h5>
               <div class="about-description">
                 An India-based freelance Web Developer and Graphic Designer with
@@ -158,12 +158,63 @@
     </div>
   <!-- About section ends -->
     
-  
-  
     <!-- My Skills section starts -->
-    <!-- <main class="mySkills-section" id="skills"> -->
-    <!-- <h1><b>MY SKILLS</b></h1> -->
-    <!-- <div class="skills"> -->
+    <div class="mySkills-section" id="skills">
+      <div class="my-skills-heading">
+        <h2>MY SKILLS</h2>
+      </div>
+        <div class="row row-cols-4">
+          <div class="col">
+            <div class="container">
+              <img src="./Assests/html5.png" 
+              class="card-img-top" 
+              alt="html5" 
+              style="background-color: rgba(241, 120, 68, 0.121);">
+              <div class="card-body">
+                <h5 class="card-title">HTML5</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container">
+              <img src="./Assests/css.png" 
+              class="card-img-top" 
+              alt="css3"
+              style="background-color: rgba(33, 75, 229, 0.123);">
+              <div class="card-body">
+                <h5 class="card-title">CSS3</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container">
+              <img src="./Assests/JS-logo.png" 
+              class="card-img-top" 
+              alt="JavaScript"
+              style="background-color: #f5dc1e1f;">
+              <div class="card-body">
+                <h5 class="card-title">JavaScript</h5>
+              </div>
+            </div>
+          </div>
+      </div>
+  <!--
+    <div class="col">
+       -->
+    <!-- <div class="col">CSS</div>
+    <div class="col">JS</div>
+    <div class="col">React</div>
+  </div>
+  <div class="row row-cols-4">
+    <div class="col">Bootstrap</div>
+    <div class="col">Tailwind</div>
+    <div class="col">MySql</div>
+    <div class="col">Git & Github</div>
+  </div> -->
+<!-- </div>
+</div>-->
+<!-- </div> -->
+<!-- </div>  -->
     <!-- <div class="left-skills"> -->
     <!-- <div class="progress-bar-container"> -->
     <!-- Language: HTML  -->
@@ -221,7 +272,7 @@
     <!-- </div> -->
     <!-- </div> -->
     <!-- </div> -->
-    <!-- </main> -->
+    
     <!-- My Skills section ends -->
     <!-- Services starts -->
     <!-- <div class="myServices" id="services"> -->
