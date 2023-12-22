@@ -144,13 +144,16 @@ padding-top: 2rem;
   }
 
 }
-/*  About-me section */
-.about-me-heading{
+
+.about-me-heading , .my-skills-heading , .projects-heading
+{
   display: flex;
   align-items:center;
   justify-content:center;
   padding:2rem;
 }
+
+/*  About-me section */
 .about-image-container{
   display: flex;
   align-items: center;
@@ -163,7 +166,7 @@ padding-top: 2rem;
 }
 
 .about-body{
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem 0 4rem 0;
 }
 
 .about-me {
@@ -227,17 +230,10 @@ align-items: flex-start;
 
 /* Skills section css */
 
-.card-img-top{
+.tech-stack-img{
   padding: 22px;
   width:8rem;
   border-radius: 10rem;
-}
-
-.my-skills-heading{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
 }
 
 .tech-stack-container {
@@ -248,4 +244,18 @@ align-items: flex-start;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.view-All-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
