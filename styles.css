@@ -145,7 +145,8 @@ padding-top: 2rem;
 
 }
 
-.about-me-heading , .my-skills-heading , .projects-heading
+.about-me-heading , .my-skills-heading ,
+ .projects-heading,.contact-me-heading
 {
   display: flex;
   align-items:center;
@@ -258,4 +259,17 @@ align-items: flex-start;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* footer section */
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
 }
