@@ -126,7 +126,7 @@ color: #1b234f !important;
     font-size: 1.2rem;
   }
 }
-
+/* for small screen and below */
 @media screen and  (max-width:576px){
   .intro-text{
     padding:0;
@@ -229,7 +229,7 @@ align-items:flex-start;
   font-size:16px;
   padding-left: 5px;
 }
-
+/* for small screen and below */
 @media screen and  (max-width:576px){
   
   .about-image{
@@ -294,7 +294,12 @@ align-items:flex-start;
   padding:1rem;
 }
 
+@media screen and (max-width:992px){
 
+  .project-container {
+    margin-bottom: 1.5rem;
+  }
+}
 /* contact-me section */
 
 .contact-me{
