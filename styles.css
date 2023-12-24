@@ -50,41 +50,44 @@ color: #1b234f !important;
   color:#fff;
   background-color: #1b234f;
 }
+/* 
+.home-body{
+
+} */
 
 .home-section{
-  padding: 4rem;
-  margin: 2rem 0;
-}
-
-.intro-container {
   display: flex;
-padding-top: 2rem; 
+  padding: 6rem 2rem;
+  align-items: center;
+  justify-content: center;
 }
+
 .intro-text {
-  padding:1.7rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.sub-text h5{
+.sub-text{
   font-size: 2rem;
-}
-
-.sub-title{
-  font-size: 2rem;
-  line-height: 1.5;
 }
 .my-name {
-  font-size: 4.5rem;
+  font-size: 4rem;
   letter-spacing:2px;
   line-height:1.5;
   font-weight: 700;
 }
-
-.description {
+.sub-title{
+  font-size: 2rem;
   line-height: 1.5;
+}
+
+
+.intro-description {
+  line-height: 1.7;
 }
 .display-picture-container {
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
 }
 .display-picture {
   width: 24rem;
@@ -145,8 +148,7 @@ padding-top: 2rem;
 
 }
 
-.about-me-heading , .my-skills-heading ,
- .projects-heading,.contact-me-heading
+ .my-skills-heading 
 {
   display: flex;
   align-items:center;
@@ -155,10 +157,23 @@ padding-top: 2rem;
 }
 
 /*  About-me section */
-.about-image-container{
+
+.about-section{
   display: flex;
+  flex-direction:column;
   align-items: center;
   justify-content: center;
+  padding-top: 3rem;
+}
+
+.about-me-heading{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+
+.about-image-container{
   padding:2rem;
 }
 
@@ -167,6 +182,9 @@ padding-top: 2rem;
 }
 
 .about-body{
+  display: flex;
+  flex-direction: column;
+ /* width: 588px; */
   padding: 2rem 0 4rem 0;
 }
 
@@ -194,13 +212,13 @@ padding-top: 2rem;
 }
 .media{
 display:flex;
-align-items: flex-start;
-/* flex-wrap: wrap; */
+align-items:flex-start;
+/* flex-wrap: nowrap; */
 }
 
 .about-body .media label{
   padding:5px;
-  font-size:18px;
+  font-size:16px;
   font-weight: 600;
   flex:0 0 107px;  /* flex-grow flex-shrink flex-basis  */
   border-right: 1px solid #c1c1c1;
@@ -208,7 +226,7 @@ align-items: flex-start;
 
 .about-body .media p{
   padding: 6px;
-  font-size:18px;
+  font-size:16px;
   padding-left: 5px;
 }
 
@@ -231,6 +249,9 @@ align-items: flex-start;
 
 /* Skills section css */
 
+.mySkills-section{
+  padding-top: 2rem;
+}
 .tech-stack-img{
   padding: 22px;
   width:8rem;
@@ -260,13 +281,63 @@ align-items: flex-start;
   align-items: center;
   justify-content: center;
 }
+/* Project section */
 
-/* footer section */
+.MyProjects{
+  padding-top:3rem ;
+}
 
-.icon-container {
+.projects-heading{
   display: flex;
-  justify-content: center;
   align-items:center;
+  justify-content:center;
+  padding:1rem;
+}
+
+
+/* contact-me section */
+
+.contact-me{
+  padding:3rem 0;
+  /* padding-bottom: 3rem; */
+}
+
+.contact-me-heading
+{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  padding:1rem;
+}
+
+.thankyouImg-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+ 
+}
+
+.thankyou-img{
+  width: 22rem;
+}
+
+.form-heading{
+  padding-bottom: 1rem;
+}
+/* footer section */
+.footer-container{
+  padding: 1.2rem;
+}
+.footer-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:0 1rem !important;
+
+}
+.icon-container {
+  margin-right: 2rem;
   cursor: pointer;
 }
 
