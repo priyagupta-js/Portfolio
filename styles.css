@@ -71,7 +71,7 @@ color: #1b234f !important;
   font-size: 2rem;
 }
 .my-name {
-  font-size: 4rem;
+  font-size: 3.6rem;
   letter-spacing:2px;
   line-height:1.5;
   font-weight: 700;
@@ -87,10 +87,11 @@ color: #1b234f !important;
 }
 .display-picture-container {
   display: flex;
-  justify-content:space-around;
+  justify-content:center;
+  align-items: center;
 }
 .display-picture {
-  width: 24rem;
+  width: 28rem;
 }
 /* media query for navbar (<large screen) */
 
@@ -252,6 +253,10 @@ align-items:flex-start;
 .mySkills-section{
   padding-top: 2rem;
 }
+
+.mySkills-section-lg{
+  padding-top: 2rem;
+}
 .tech-stack-img{
   padding: 22px;
   width:8rem;
@@ -281,6 +286,20 @@ align-items:flex-start;
   align-items: center;
   justify-content: center;
 }
+/* for screen size 992 and wider */
+@media screen and  (min-width:992px){
+  .mySkills-section-lg{
+    display:none;
+  }
+}
+/* for screen size 992px and smaller */
+
+@media screen and  (max-width:992px){
+  .mySkills-section{
+    display:none;
+  }
+}
+
 /* Project section */
 
 .MyProjects{
