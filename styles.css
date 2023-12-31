@@ -325,6 +325,10 @@ align-items:flex-start;
   padding:1rem;
 }
 
+/* .project-handler{
+  padding: 2rem;
+} */
+
 @media screen and (max-width:992px){
 
   .project-container {
