@@ -46,7 +46,9 @@ body {
 .btn-work,
 .btn-hire,
 .btn-view,
-.btn-sendMsg {
+.btn-sendMsg,
+.btn-github ,
+.btn-link {
   font-size: 1.2rem;
   text-decoration: none;
   color: #2f3c7e;
@@ -63,7 +65,9 @@ body {
 .btn-work:hover,
 .btn-hire:hover,
 .btn-view:hover,
-.btn-sendMsg:hover {
+.btn-sendMsg:hover,
+.btn-github:hover,
+.btn-link:hover {
   color: #fff;
   background-color: #1b234f;
 }
