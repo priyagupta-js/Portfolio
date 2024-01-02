@@ -275,6 +275,7 @@ body {
   width: 8rem;
   border-radius: 10rem;
 }
+
 .tech-stack-container {
   margin-bottom: 4rem;
 }
@@ -283,6 +284,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .project-container {
   display: flex;
   flex-direction: row;
