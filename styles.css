@@ -323,7 +323,14 @@ body {
     border-radius: 10rem;
   }
 }
+/* Services section */
 
+.myServices{
+  margin-bottom:2rem ;
+}
+.services-heading{
+  padding: 2rem;
+}
 /* Project section */
 
 .MyProjects {
