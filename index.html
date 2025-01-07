@@ -142,7 +142,7 @@
               <div class="col-lg-6 p-0">
                 <div class="media">
                   <label>Email</label>
-                  <p>priyagupta052k@gmail.com</p>
+                  <p>gupta.priya2k30@gmail.com</p>
                 </div>
                 <div class="media">
                   <label>Languages</label>
@@ -548,26 +548,27 @@
                 <h3 class="card.title">Thank You!</h3>
                 <h6 class="text-muted">What questions do you have for me?</h6>
               </div>
+              <form action="https://api.web3forms.com/submit" id ="formData" method="POST">
+                <input type="hidden" name="access_key" value="2bc41058-89a2-4cb0-9022-86d1cede7660">
               <div class="container p-0">
                 <div class="mb-3">
-                  <input type="text" class="form-control" id="name" placeholder="Your Name*">
+                  <input type="text" name="name"class="form-control"  placeholder="Your Name*">
                 </div>
                 <div class="mb-3">
-                  <input type="email" class="form-control" id="email" placeholder="Email*">
+                  <input type="email" name="email"class="form-control"  placeholder="Email*">
                 </div>
                 <div class="mb-3">
-                  <textarea class="form-control" id="message" rows="7" cols="61" placeholder="Message"></textarea>
+                  <textarea name="message" class="form-control"  rows="7" cols="61" placeholder="Message"></textarea>
                 </div>
-                <a href="mailto:priyagupta052k@gmail.com"><button class="btn btn-sendMsg">SEND
-                    MESSAGE</button></a>
+                <button type="submit" id="btn-send" class="btn btn-sendMsg">SEND MESSAGE</button>
               </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Contact Me ends-->
-
     <!-- Footer -->
     <footer class="bg-body-tertiary footer-container">
 
