@@ -360,6 +360,18 @@ body {
   padding: 1rem;
 }
 
+ div .card .img-container
+ {
+  width: 100%;
+  background-color: #fff;
+  padding: 5px;
+ 
+ }
+
+ .card-img-top
+ {
+  box-shadow: 1px 1px 10px rgba(29, 29, 29, 0.322);
+ }
 /* .project-handler{
   padding: 2rem;
 } */
