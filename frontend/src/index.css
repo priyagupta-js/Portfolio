@@ -1,1 +1,132 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --neon-blue: #3B82F6;
+    --neon-cyan: #06B6D4;
+    --neon-purple: #8B5CF6;
+    --neon-green: #10B981;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased transition-colors duration-300;
+  }
+
+  * {
+    @apply border-dark-border;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-bg;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neon-blue rounded-full;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-md bg-white/5 border border-white/10;
+  }
+
+  .glass-light {
+    @apply backdrop-blur-md bg-black/5 border border-black/10;
+  }
+
+  .neon-text {
+    text-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
+  }
+
+  .neon-border {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3), inset 0 0 15px rgba(59, 130, 246, 0.05);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl;
+  }
+
+  .section-title {
+    @apply font-mono text-3xl md:text-4xl font-bold mb-2;
+  }
+
+  .section-subtitle {
+    @apply text-sm font-mono text-neon-blue mb-12 tracking-widest uppercase;
+  }
+
+  .btn-primary {
+    @apply font-mono text-sm px-6 py-3 rounded-lg border border-neon-blue text-neon-blue
+           hover:bg-neon-blue hover:text-white transition-all duration-300
+           hover:shadow-lg hover:shadow-neon-blue/25 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply font-mono text-sm px-6 py-3 rounded-lg bg-neon-blue text-white
+           hover:bg-blue-600 transition-all duration-300
+           hover:shadow-lg hover:shadow-neon-blue/40 active:scale-95;
+  }
+
+  .skill-tag {
+    @apply font-mono text-xs px-3 py-1 rounded-full border;
+  }
+
+  .reveal {
+    @apply opacity-0;
+  }
+
+  .reveal.visible {
+    @apply animate-fade-up opacity-100;
+  }
+}
+
+/* Custom glow effects */
+.blob {
+  filter: blur(80px);
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Typing cursor */
+.cursor::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+  color: #3B82F6;
+}
+
+/* Timeline */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #3B82F6, transparent);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6, #06B6D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Nav blur */
+.nav-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
